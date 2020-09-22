@@ -1,0 +1,11 @@
+@import "./Assets/button";
+
+
+.button{
+    background-color: purple;
+    color: $secondary-color;
+    
+    &:hover{
+        background-color: pink;
+    }
+    }

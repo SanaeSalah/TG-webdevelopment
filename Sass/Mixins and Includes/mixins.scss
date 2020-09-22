@@ -1,0 +1,22 @@
+@mixin button-opmaak {
+    background-color: lightcoral;
+    color: rgb(179, 119, 179); 
+    width:  100px;
+    height: 40px;
+    border-radius:4px;
+}
+
+@mixin hover {
+    background-color: palevioletred;
+        color: white;
+        transition:5s;
+}
+
+.button {
+    @include button-opmaak;
+   
+
+    &:hover {
+        @include hover;
+    }
+}

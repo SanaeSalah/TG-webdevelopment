@@ -1,0 +1,15 @@
+.button {
+  background-color: lightcoral;
+  color: #b377b3;
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: palevioletred;
+  color: white;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+/*# sourceMappingURL=mixins.css.map */
