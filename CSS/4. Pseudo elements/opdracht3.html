@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .text::after {
+        content: "<- Sanae!";
+        color: green;
+    }
+    .text::before {
+        content: " Sanae!-> ";
+        color: green;
+    }
+
+    .text2::first-line {
+        color: blueviolet;
+    }
+
+    .text3::first-letter {
+        color: blue;
+    }
+</style>
+
+<body>
+    <h4>Opdracht 3</h4>
+    <h4>Er zijn aldus 14 verschillende pseudo elementen. Je hebt ze in de voorgaande opdracht reeds opgezocht en
+        uitgezocht wat ze doen. Kun je van al deze pseudo-elementen een voorbeeld maken?</h4>
+    <h4>Antwoord</h4>
+
+    <h3><b>After en Before</b></h3>
+    <p class="text">Sanae wordt achter deze tekst geplaatst.</p>
+
+
+    <h3><b>First-line</b></h3>
+    <p class="text2">Sanae wordt achter deze tekst geplaatst.</p>
+    <p>Dit is een random tekst.</p>
+
+
+    <h3><b>First-letter</b></h3>
+    <p class="text3">Sanae wordt achter deze tekst geplaatst.</p>
+    <p>Dit is een random tekst.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        position: relative;
+        width: 450px;
+        height: 340px;
+        border:solid 2px;
+    }
+
+    .box::before {
+        background-image: no-repeat;
+         position: absolute;
+         content: '';
+         background-image: url(poesje.jpg);
+         width: 450px;
+         height: 350px;
+         top:5px;
+         z-index: -3;
+         text-align: center;
+       
+    }
+
+    </style>
+
+<body>
+    <h4>Opdracht 5</h4>
+    <h4>Hieronder vind je nog eens een voorbeeld van het gebruik van een pseudo-element ::before. Kun jij dit namaken?
+        Zoek een afbeelding op internet.</h4>
+
+        <div class="box"> 
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas culpa expedita reiciendis blanditiis
+                laudantium dolore quisquam tempore cum voluptates atque officiis, ullam quaerat, ut ipsam tenetur
+                accusantium esse at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptates
+                accusantium eaque velit, illo nihil ipsa commodi cum eligendi blanditiis similique nesciunt aliquid
+                dolores exercitationem aut aliquam perferendis voluptatibus saepe. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Ipsum, a, praesentium necessitatibus pariatur saepe repellat velit
+                doloribus, quas quo quibusdam eligendi molestiae voluptatum tempore debitis nisi eius? Minus, similique.
+                Distinctio.</p>
+        </div> </div>
+
+    </fieldset>
+</body>
+
+</html>

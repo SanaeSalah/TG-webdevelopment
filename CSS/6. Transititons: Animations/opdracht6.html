@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+
+    .screen {
+        background:wh;
+        width: 556px;
+        height: 620px;
+        overflow: hidden;
+        position: relative;
+        -webkit-perspective: 600px;
+    }
+
+    .Kubis  {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        height: 250px;
+        border: 1px solid #bdbdbd;
+        border-radius: 10px;
+        box-shadow: 0 0 50px rgb(204, 12, 12);
+        text-align: center;
+        background-color: darkgrey;
+        color: honeydew;
+        animation: slide 5s forwards;
+    }
+
+    .Kubis .box {
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: lighter;
+        padding: 16px;
+    }
+
+    .box span {
+        display: block;
+        font-size: 12px;
+        padding-top: 8px;
+
+    }
+
+    .red {
+
+        top: 50px;
+        left: 278px;
+        -webkit-transform-origin: right center;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        z-index: 50;
+    }
+
+    .blue {
+        top: 50px;
+        left: 78px;
+        -webkit-transform-origin: left center;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        z-index: 50;
+    }
+
+    .header {
+        position: absolute;
+        top: -40px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-align: center;
+        width: 100%;
+        opacity: 0.8;
+        -webkit-transition: -webkit-transform 0.5s ease;
+    }
+
+    .screen:hover .red {
+        -webkit-transform: rotateY(-70deg) translateX(150px) translateY(24px) translateZ(50px);
+    }
+
+    .screen:hover .blue {
+        -webkit-transform: rotateY(70deg) translateX(-150px) translateY(24px) translateZ(50px);
+    }
+
+    .screen:hover .header {
+        -webkit-transform: translateY(40px);
+    }
+
+    .screen:hover .next {
+        opacity: 1;
+        margin-top: 0px;
+    }
+
+    .next {
+        top: 50px;
+        left: 178px;
+        -webkit-transform-origin: left center;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.6s ease-in-out;
+        z-index: 1;
+        -webkit-transform: translate3d(-50px, 400px, -800px);
+        box-shadow: 0px 0px 30px 10px #eee;
+        opacity: 0.4;
+    }
+
+    .screen .next {
+        -webkit-transform: translate3d(0px, 20px, 0px);
+        box-shadow: none;
+        opacity: 0;
+        margin-top: 250px;
+    }
+
+    .nextNext {
+        top: 50px;
+        left: 178px;
+        -webkit-transform-origin: left center;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.6s ease-in-out;
+        z-index: 100;
+        -webkit-transform: translate3d(0px, 600px, 600px);
+        box-shadow: 0px 0px 20px 10px #ed4343;
+        opacity: 0.4;
+    }
+
+    .screen:hover .nextNext {
+        -webkit-transform: translate3d(0px, 240px, 0px);
+        box-shadow: none;
+        opacity: 0.9;
+    }
+
+    p {
+        animation: color-change 1s infinite;
+    }
+
+    @keyframes color-change {
+        0% {
+            color: red;
+        }
+
+        50% {
+            color: blue;
+        }
+
+        100% {
+            color: red;
+        }}
+</style>
+
+<body>
+
+    <div class="screen">
+        <div class="header">
+        </div>
+        <div class="Kubis blue">
+            <div class="box">
+                <p>Article Sep 16, 2019</p>
+                <h4>Placeholder title</h4>
+                <p>Author:Kim Sing</p>
+            </div>
+        </div>
+        <div class="Kubis red">
+            <div class="box">
+                <p>Article Sep 16, 2019</p>
+                <h4>Placeholder title</h4>
+                <p>Author:Kim Sing</p>
+            </div>
+        </div>
+        <div class="Kubis next">
+            <div class="box">
+                <p>Article Sep 16, 2019</p>
+                <h4>Placeholder title</h4>
+                <p>Author:Kim Sing</p>
+            </div>
+        </div>
+        <div class="Kubis nextNext">
+            <div class="box">
+                <p>Article Sep 16, 2019</p>
+                <h4>Placeholder title</h4>
+                <p>Author:Kim Sing</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

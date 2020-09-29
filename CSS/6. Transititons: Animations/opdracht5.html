@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        position: relative;
+        width: 25%;
+        background-color: grey;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+    }
+
+    @keyframes example {
+        0% {
+            background-color: lightcyan;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background-color: lightpink;
+            left: 200px;
+            top: 0px;
+        }
+
+        50% {
+            background-color: lightgreen;
+            left: 200px;
+            top: 200px;
+        }
+
+        75% {
+            background-color: lightseagreen;
+            left: 0px;
+            top: 200px;
+        }
+
+        100% {
+            background-color: mediumaquamarine;
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container:hover .image {
+        opacity: 0.3;
+    
+    }
+
+    .container:hover .middle {
+        opacity: 0.5;
+        color: #255784;
+        background-color: #2196f3;
+        box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+        transition-delay: 0, 1s;
+    }
+
+    .text {
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+
+    .box {
+        width: 370px;
+        height: 400px;
+        animation: box_fall 8s linear 1;
+        background: rgba(10, 10, 131, 0.5);
+        animation: flipAround 5s infinite;
+        transform-origin: right;
+    }
+
+    @keyframes flipAround {
+
+        75% {
+            transform-origin: left;
+            transform-origin: left;
+            transform: translateX(200px) translateY(200px) rotateY(180deg);
+        }
+
+        0% {
+            transform-origin: top;
+            transform-origin: top;
+            transform: translateY(100px) rotateX(180deg);
+        }
+
+    }
+
+
+</style>
+
+<body>
+    <h4>Opdracht 5</h4>
+    <div class="container">
+        <img src="fotobehang-poesje-met-billboard.jpg" alt="Poesjes" class="image">
+        <div class="middle">
+            <div class="text">Hello cutie!</div>
+        </div>
+        <div class="frame"></div>
+
+    </div>
+    <div class="box"></div>
+    </div>
+
+
+
+
+</body>
+
+</html>

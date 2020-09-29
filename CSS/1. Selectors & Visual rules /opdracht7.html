@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Selectors">
+        <h3> Simple selectors</h3>
+
+        <h4>The class Selector</h4>
+        <style>
+            .Selectors {
+                color: black;
+            }
+        </style>
+
+        <h4>The Universal Selector</h4>
+        <style>
+            * {
+                color: black;
+            }
+        </style>
+
+        <h4>The element Selector</h4>
+        <style>
+            h4 {
+                text-align: center;
+                color: black;
+            }
+        </style>
+
+        <h4> Element, element Selector</h4>
+        <style>
+            h4,
+            h3 {
+                color: black;
+            }
+        </style>
+
+        <h4>The Grouping Selector</h4>
+        <style>
+            h4,
+            h3 {
+                color: black;
+            }
+        </style>
+
+        <h3>Combinators Selectors</h3>
+
+        <h4>Descendant selector</h4>
+        <style>
+            div h4 {
+                color: black;
+            }
+        </style>
+
+        <h4>Child Selector</h4>
+        <style>
+            div>h4 {
+                color: black;
+            }
+        </style>
+
+        <h4>adjacent sibling selector</h4>
+        <style>
+            div+h4 {
+                color: black;
+            }
+        </style>
+
+        <h4>general sibling selector</h4>
+        <style>
+            div~h4 {
+                color: black;
+            }
+        </style>
+
+        <h3>Pseudo Selector</h3>
+        <h4>:root selector</h4>
+        <style>
+             :root {
+                background: lightblue;
+            }
+        </style>
+
+        <h4>Anchor Pseudo-classes</h4>
+        <style>
+            a:hover {
+                color: red;
+            }
+        </style>
+
+        <h4>Hover on "div"</h4>
+        <style>
+            div:hover {
+                background-color: lemonchiffon;
+            }
+        </style>
+
+        <h4>link Selector</h4>
+        <style>
+            a:link {
+                background-color: black;
+            }
+        </style>
+
+        <h4>Out-of-range Selector</h4>
+        <style>
+            input:out-of-range {
+                border: 1px solid black;
+            }
+        </style>
+
+        <h3>Attribute Selector</h3>
+        <h4>attribute="value"</h4>
+        <style>
+            a[target="_blank"] {
+                background-color: black;
+            }
+        </style>
+
+        <h4>attribute^="value"</h4>
+        <style>
+            [title~="Text"] {
+                border: 7px solid black;
+            }
+        </style>
+
+
+
+</body>
+
+</html>

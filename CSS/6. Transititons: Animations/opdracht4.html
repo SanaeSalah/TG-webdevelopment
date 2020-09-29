@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 400px;
+        height: 182px;
+        border: solid 2px;
+        background-color: gray;
+        position: relative;
+    }
+
+    .c1 {
+        border: solid 1px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin: 2px;
+        transition-property: transform, top, lef;
+        transition-duration: 3s;
+    }
+
+    .cb,
+    .textbox1,
+    .ca {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        margin-left: -16px;
+        margin-bottom: -16px;
+        transition: all 1s ease;
+
+    }
+
+    .container:hover .textbox1 {
+        background-color: orange;
+        transform: translate(-180px, -73px);
+    }
+
+    .container:hover .ca {
+        background-color: orange;
+        transform: translate(180px, -73px);
+  
+    }
+
+    .container:hover .cb {
+        background-color: orange;
+        transform: translate(0px, 44px) rotate(180turn);
+        transition-property: top, left;
+        top:100px;
+        transition-duration: 1s,2s;
+        transition-delay: 1s, 2s;
+
+    
+    }
+</style>
+
+
+<body>
+
+    <h4>Opdracht 4</h4>
+
+    <div class="container">
+        <button class="c1 textbox1">1</button>
+        <button class="c1 ca">2</button>
+        <button class="c1 cb">3</button>
+    </div>
+
+
+</body>
+
+</html>
