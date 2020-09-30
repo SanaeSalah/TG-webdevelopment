@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class=container1>
+        <h3>Opdracht 11-12</h3>
+        <input type="number" name="number" id="number">
+        <button id="btn" onclick="checkNumber()">Button</button>
+        <div>
+            <span id="label"></span>
+        </div>
+    </div>
+    <script>
+        function checkNumber() {
+            let value, text;
+            value = document.getElementById("number").value;
+            if (value == 21 || value == 23) {
+                text = "Het ingevoerde getal is 21 en of 23.";
+            } else if (value > 30 && value < 35 || value > 40 && value < 45) {
+                text = "Het ingevoerde getal is tussen 30 en 35 of tussen 40 en 45.";
+            }
+            document.getElementById("label").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>
